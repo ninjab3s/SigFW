@@ -20,7 +20,6 @@
         <picocontainer.version>1.2</picocontainer.version>
         <slf4j.version>1.7.21</slf4j.version>
     </properties>
-    
     <!--<dependencies>
         <dependency>
                 <groupId>com.p1sec</groupId>
@@ -28,7 +27,28 @@
                 <version>1.0.0</version>
             </dependency>
     </dependencies>-->
-    
+    <repositories>
+    <repository>
+        <id>jboss-deprecated-repository</id>
+        <name>JBoss Deprecated Maven Repository</name>
+        <url>https://repository.jboss.org/nexus/content/repositories/deprecated/</url>
+        <layout>default</layout>
+        <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+        </releases>
+        <snapshots>
+            <enabled>false</enabled>
+            <updatePolicy>never</updatePolicy>
+        </snapshots>
+    </repository>
+    <repository>
+        <id>mobicents-commons</id>
+        <name>Mobicents Commons</name>
+        <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+    </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.mobicents.protocols.asn</groupId>

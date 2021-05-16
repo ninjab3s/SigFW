@@ -26,6 +26,28 @@
         <slf4j.version>1.8.0-beta4</slf4j.version>
     </properties>
 
+    <repositories>
+    <repository>
+        <id>jboss-deprecated-repository</id>
+        <name>JBoss Deprecated Maven Repository</name>
+        <url>https://repository.jboss.org/nexus/content/repositories/deprecated/</url>
+        <layout>default</layout>
+        <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+        </releases>
+        <snapshots>
+            <enabled>false</enabled>
+            <updatePolicy>never</updatePolicy>
+        </snapshots>
+    </repository>
+    <repository>
+        <id>mobicents-commons</id>
+        <name>Mobicents Commons</name>
+        <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+    </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.mobicents.protocols.asn</groupId>
